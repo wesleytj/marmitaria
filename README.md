@@ -48,14 +48,14 @@
           • app.component.html
     ```
     Podemos também, apagar o conteúdo `title = 'Marmitaria';` dentro do typescript `app.component.ts` <br>
-  * Para não perdermos muito tempo com estilização, vamos criar nossos primeiros conteúdos, utilizando Bootstrap. Então, no terminal, podemos digitar `npm install bootstrap` . Após a instalação do Bootstrap, precisamos fazer referência a ele dentro do arquivo `angular.json`, então na parte de estilos (styles) acrescentamos o caminho do Bootstrap dentro do nosso projeto: <br>
+  * Para não perdermos muito tempo com estilização, vamos criar nossos primeiros conteúdos, utilizando Bootstrap. Então, no terminal, podemos digitar `npm install bootstrap` . Após a instalação do Bootstrap, precisamos fazer referência a ele dentro do arquivo `angular.json`, então na parte de estilos (styles) acrescentamos o caminho do Bootstrap dentro do nosso projeto: <br><br>
     `"node_modules/bootstrap/dist/css/bootstrap.min.css",`. <br><br>
     ``` json
     "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-    ``` <br>
+    ```
   * E agora, podemos rodar o projeto pra testar se está tudo certo. Ainda no terminal, vamos digitar o comando `ng serve`. <br>
     No primeiro momento nosso projeto vai abrir em branco, pois apagamos os conteúdos padrões anteriormente dentro do `app.component.html`, mas vamos criar alguma coisa pra testar inclusive nosso Bootstrap. <br>
     Ainda dentro do `app.component.html`, vamos colocar o seguinte comando <br>
