@@ -68,5 +68,33 @@
       </div>
     </div>
     ```
+<br>
 
+![Layout das páginas atuais](https://github.com/wesleytj/marmitaria/blob/main/Marmitaria/img/preview/01.jpg)
+  Se o texto tiver mais para direita, significa que você fez tudo certinho até aqui =D \o/
+  
+ * Então agora vamos começar a colocar mão na massa, criando nosso primeiro componente. Para pegar-mos o jeito e irmos entendendo como o Angular funciona, vamos criar o nosso primeiro component manualmente e os próximos via terminal(CLI).<br>
+   -> 1º Passo: Dentro de `app` vamos criar uma nova pasta `new folder` chamada `header` e dentro dessa pasta, um novo arquivo `new file` chamado `header.component.ts`.
+   <br>-> 2º Passo: Dentro do nosso novo arquivo, teremos que exportar a classe e criar um constructor pra essa classe. Dentro do construtor, vamos definir algumas informações como: `selector` e `template`. Então bora lá:
+   <br>
+    • Dentro de `header.component.ts` vamos exportar a classe: `export class HeaderComponent{}`;
+    <br>
+    • Logo acima, colocamos o Constructor `@Component({})`, aqui é importante verificarmos, se o nosso editor de código já importou automaticamente esse constructor pra nós, se não, precisamos importar manualmente `import { Component } from "@angular/core"`;
+    <br>
+    • Dentro do constructor `selector: 'app-header, templateUrl: './header.component.html',`
+    nosso código deve ter ficado assim:<br><br>
+    ```html
+    import { Component } from "@angular/core";
+
+    @Component({
+      selector: 'app-header',
+      templateUrl: './header.component.html',
+    })
+
+    export class HeaderComponent{
+
+    }    
+    ```
+    <br>•Agora, se vocês notaram, como declaramos nosso `templateUrl` precisamos criar o arquivo. Então, dentro da pasta `header`, `new file` chamado `header.component.html`.
+    <br>
 <h1> >>>>>>>>>> EM CONSTRUÇÃO <<<<<<<<<< </h1>
