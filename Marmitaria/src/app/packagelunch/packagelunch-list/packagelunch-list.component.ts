@@ -1,3 +1,4 @@
+import { PackageLunch } from './packagelunch-list.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PackagelunchListComponent implements OnInit {
 
+  packages: PackageLunch[] = [
+    new PackageLunch('Churrasco', 'Picanha', 'https://www.receiteria.com.br/wp-content/uploads/receitas-de-churrasco-0.png')
+  ];
+  
   constructor() { }
 
   ngOnInit(): void {

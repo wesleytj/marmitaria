@@ -1,1 +1,23 @@
-<app-packagelunch-item></app-packagelunch-item>
+<div class="row mb-2">
+  <div class="col-12">
+    <button class="btn btn-success">Adicionar Marmita</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <!--<app-packagelunch-item></app-packagelunch-item>-->
+    <a href="#" class="list-group-item clearfix" *ngFor="let package of packages">
+      <div class="float-start">
+        <h4 class="list-group-item-heading">
+          {{ package.name }}
+        </h4>
+        <p class="list-group-item-text">
+          {{ package.description }}
+        </p>
+      </div>
+      <div class="float-end">
+        <img [src]="package.imagePath" alt="{{ package.description }}" class="img-responsive" style="max-height: 80px;">
+      </div>
+    </a>
+  </div>
+</div>
