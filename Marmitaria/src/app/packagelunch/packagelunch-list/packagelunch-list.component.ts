@@ -1,4 +1,4 @@
-import { PackageLunch } from './packagelunch-list.model';
+import { PackageLunch } from '../packagelunch-list.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

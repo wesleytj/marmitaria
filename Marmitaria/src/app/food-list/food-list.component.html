@@ -2,6 +2,12 @@
   <div class="col-sm-10">
     <app-food-edit></app-food-edit>
     <hr>
-    <p>A lista vai aqui em baixo</p>
+    <ul class="list-group">
+      <a *ngFor="let food of foodList"
+      class="list-group-item" 
+      style="cursor: pointer;">
+      {{ food.name }} ({{ food.amount }})
+    </a>
+    </ul>
   </div>
 </div>
